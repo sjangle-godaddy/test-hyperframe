@@ -1,0 +1,76 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; pointer-events: none; }
+    .cap {
+      position: absolute; left: 162px; top: 812px; width: 756px; margin: 0;
+      font-family: "Inter", sans-serif; font-weight: 400; font-size: 30px; line-height: 42px;
+      color: #c9c9d3; text-align: center; opacity: 0;
+    }
+  </style>
+  <div data-hf-id="hf-gvm3" id="root" data-composition-id="captions" data-width="1080" data-height="1080">
+    <p data-hf-id="hf-hcgf" id="cap-hook-0" class="cap clip" data-start="0.6" data-duration="4.1" data-track-index="0">Imagine booking a train ticket during the morning rush,</p>
+    <p data-hf-id="hf-w38m" id="cap-hook-1" class="cap clip" data-start="4.99" data-duration="2.28" data-track-index="0">and the app keeps spinning.</p>
+    <p data-hf-id="hf-h5en" id="cap-timeouts-0" class="cap clip" data-start="8.76" data-duration="2.28" data-track-index="0">That's where timeouts come in.</p>
+    <p data-hf-id="hf-xavn" id="cap-timeouts-1" class="cap clip" data-start="11.33" data-duration="3.19" data-track-index="0">Clients can put a limit on waiting;</p>
+    <p data-hf-id="hf-6ho4" id="cap-timeouts-2" class="cap clip" data-start="14.81" data-duration="2.28" data-track-index="0">servers can limit processing time.</p>
+    <p data-hf-id="hf-2u3d" id="cap-timeouts-3" class="cap clip" data-start="17.38" data-duration="4.56" data-track-index="0">But a timeout doesn't automatically cancel or undo a booking.</p>
+    <p data-hf-id="hf-g8o6" id="cap-retry-0" class="cap clip" data-start="23.43" data-duration="3.19" data-track-index="0">But you still need that ticket, right?</p>
+    <p data-hf-id="hf-02mj" id="cap-retry-1" class="cap clip" data-start="26.91" data-duration="3.65" data-track-index="0">Maybe the server crashed before sending your response.</p>
+    <p data-hf-id="hf-2f20" id="cap-retry-2" class="cap clip" data-start="30.85" data-duration="2.28" data-track-index="0">This is where retry helps:</p>
+    <p data-hf-id="hf-8xf1" id="cap-retry-3" class="cap clip" data-start="33.42" data-duration="5.01" data-track-index="0">it sends the request again, giving it another chance to succeed.</p>
+    <p data-hf-id="hf-ycpi" id="cap-backoff-0" class="cap clip" data-start="39.92" data-duration="2.74" data-track-index="0">But you're not alone retrying, right?</p>
+    <p data-hf-id="hf-20fw" id="cap-backoff-1" class="cap clip" data-start="42.95" data-duration="5.46" data-track-index="0">Millions of users retry while the initial requests are still being processed.</p>
+    <p data-hf-id="hf-nmqg" id="cap-backoff-2" class="cap clip" data-start="48.7" data-duration="2.28" data-track-index="0">This can overload the server.</p>
+    <p data-hf-id="hf-9a45" id="cap-backoff-3" class="cap clip" data-start="51.27" data-duration="2.74" data-track-index="0">That's why we use exponential backoff:</p>
+    <p data-hf-id="hf-uuvx" id="cap-backoff-4" class="cap clip" data-start="54.3" data-duration="5.01" data-track-index="0">increase the delay between retries: one second, then two, then four,</p>
+    <p data-hf-id="hf-elrk" id="cap-backoff-5" class="cap clip" data-start="59.6" data-duration="5.01" data-track-index="0">and on top of it, we add a retry limit too.</p>
+    <p data-hf-id="hf-g0ov" id="cap-debit-0" class="cap clip" data-start="66.1" data-duration="2.28" data-track-index="0">Your money was already debited.</p>
+    <p data-hf-id="hf-jv35" id="cap-debit-1" class="cap clip" data-start="68.67" data-duration="4.1" data-track-index="0">Will retrying again cause multiple debits from your account?</p>
+    <p data-hf-id="hf-y4jc" id="cap-idem-0" class="cap clip" data-start="74.26" data-duration="2.28" data-track-index="0">That's where idempotency comes in.</p>
+    <p data-hf-id="hf-wj56" id="cap-idem-1" class="cap clip" data-start="76.83" data-duration="6.83" data-track-index="0">It sends a unique key with the first booking request and reuses it on retries.</p>
+    <p data-hf-id="hf-ti7r" id="cap-idem-2" class="cap clip" data-start="83.95" data-duration="2.28" data-track-index="0">If that booking already succeeded,</p>
+    <p data-hf-id="hf-105h" id="cap-idem-3" class="cap clip" data-start="86.52" data-duration="3.65" data-track-index="0">the server returns its result without charging again.</p>
+    <p data-hf-id="hf-0st4" id="cap-recap-0" class="cap clip" data-start="91.66" data-duration="4.1" data-track-index="0">So when you build an app, include these safeguards,</p>
+    <p data-hf-id="hf-vjn3" id="cap-recap-1" class="cap clip" data-start="96.05" data-duration="2.74" data-track-index="0">so everyone can catch the train.</p>
+    <p data-hf-id="hf-axsl" id="cap-recap-2" class="cap clip" data-start="99.08" data-duration="4.1" data-track-index="0">Govt employees, please learn something and improve your app.</p>
+    <p data-hf-id="hf-047a" id="cap-outro-0" class="cap clip" data-start="104.67" data-duration="3.65" data-track-index="0">Like, comment, and save if this was useful.</p>
+    <p data-hf-id="hf-35qj" id="cap-outro-1" class="cap clip" data-start="108.61" data-duration="2.28" data-track-index="0">Follow for more interesting content.</p>
+    <p data-hf-id="hf-ripm" id="cap-outro-2" class="cap clip" data-start="111.18" data-duration="2.74" data-track-index="0">See you in the next one.</p>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    function cap(sel, start, end) {
+      tl.fromTo(sel, { opacity: 0 }, { opacity: 1, duration: 0.15, ease: "power2.out", immediateRender: false }, start);
+      tl.to(sel, { opacity: 0, duration: 0.12, ease: "power2.in" }, end - 0.12);
+    }
+    cap("#cap-hook-0", 0.6, 4.69);
+    cap("#cap-hook-1", 4.99, 7.26);
+    cap("#cap-timeouts-0", 8.76, 11.03);
+    cap("#cap-timeouts-1", 11.33, 14.51);
+    cap("#cap-timeouts-2", 14.81, 17.08);
+    cap("#cap-timeouts-3", 17.38, 21.93);
+    cap("#cap-retry-0", 23.43, 26.61);
+    cap("#cap-retry-1", 26.91, 30.55);
+    cap("#cap-retry-2", 30.85, 33.12);
+    cap("#cap-retry-3", 33.42, 38.42);
+    cap("#cap-backoff-0", 39.92, 42.65);
+    cap("#cap-backoff-1", 42.95, 48.4);
+    cap("#cap-backoff-2", 48.7, 50.97);
+    cap("#cap-backoff-3", 51.27, 54);
+    cap("#cap-backoff-4", 54.3, 59.3);
+    cap("#cap-backoff-5", 59.6, 64.6);
+    cap("#cap-debit-0", 66.1, 68.37);
+    cap("#cap-debit-1", 68.67, 72.76);
+    cap("#cap-idem-0", 74.26, 76.53);
+    cap("#cap-idem-1", 76.83, 83.65);
+    cap("#cap-idem-2", 83.95, 86.22);
+    cap("#cap-idem-3", 86.52, 90.16);
+    cap("#cap-recap-0", 91.66, 95.75);
+    cap("#cap-recap-1", 96.05, 98.78);
+    cap("#cap-recap-2", 99.08, 103.17);
+    cap("#cap-outro-0", 104.67, 108.31);
+    cap("#cap-outro-1", 108.61, 110.88);
+    cap("#cap-outro-2", 111.18, 113.91);
+    window.__timelines["captions"] = tl;
+  </script>
+</template>

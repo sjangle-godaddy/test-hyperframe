@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en" data-resolution="square">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+    <link rel="stylesheet" href="assets/kit.css" />
+    <script src="assets/kit.js"></script>
+    <style>
+      @font-face {
+        font-family: "Permanent Marker";
+        src: url("assets/fonts/PermanentMarker-Regular.ttf") format("truetype");
+        font-weight: 400;
+      }
+      :root {
+        --ground: #0f0f11;
+        --card: #18181c;
+        --line: #2c2c34;
+        --ink: #f2f2f5;
+        --muted: #9d9dab;
+        --orange: #ff8a3d;
+        --blue: #4da3ff;
+        --green: #3ddc97;
+        --mono: "JetBrains Mono", monospace;
+        --sans: "Inter", sans-serif;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1080px; height: 1080px; overflow: hidden; background: var(--ground); }
+      #root { width: 100%; height: 100%; background: var(--ground); }
+    </style>
+  </head>
+  <body>
+    <div data-hf-id="hf-s09w"
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="114.81"
+      data-width="1080"
+      data-height="1080"
+    >
+      <div data-hf-id="hf-39bg"
+        id="hook"
+        data-composition-id="hook"
+        data-composition-src="compositions/hook.html"
+        data-start="0"
+        data-duration="8.16"
+        data-track-index="1"
+        data-track-kind="graphics"
+        data-width="1080"
+        data-height="1080"
+        style="z-index: 1"
+      ></div>
+      <div data-hf-id="hf-ugjs"
+        id="timeouts"
+        data-composition-id="timeouts"
+        data-composition-src="compositions/timeouts.html"
+        data-start="8.16"
+        data-duration="14.67"
+        data-track-index="1"
+        data-track-kind="graphics"
+        data-width="1080"
+        data-height="1080"
+        style="z-index: 2"
+      ></div>
+      <div data-hf-id="hf-2qod"
+        id="retry"
+        data-composition-id="retry"
+        data-composition-src="compositions/retry.html"
+        data-start="22.83"
+        data-duration="16.49"
+        data-track-index="1"
+        data-track-kind="graphics"
+        data-width="1080"
+        data-height="1080"
+        style="z-index: 3"
+      ></div>
+      <div data-hf-id="hf-xiph"
+        id="backoff"
+        data-composition-id="backoff"
+        data-composition-src="compositions/backoff.html"
+        data-start="39.32"
+        data-duration="26.18"
+        data-track-index="1"
+        data-track-kind="graphics"
+        data-width="1080"
+        data-height="1080"
+        style="z-index: 4"
+      ></div>
+      <div data-hf-id="hf-n3rz"
+        id="debit"
+        data-composition-id="debit"
+        data-composition-src="compositions/debit.html"
+        data-start="65.5"
+        data-duration="8.16"
+        data-track-index="1"
+        data-track-kind="graphics"
+        data-width="1080"
+        data-height="1080"
+        style="z-index: 5"
+      ></div>
+      <div data-hf-id="hf-hsd8"
+        id="idem"
+        data-composition-id="idem"
+        data-composition-src="compositions/idem.html"
+        data-start="73.66"
+        data-duration="17.4"
+        data-track-index="1"
+        data-track-kind="graphics"
+        data-width="1080"
+        data-height="1080"
+        style="z-index: 6"
+      ></div>
+      <div data-hf-id="hf-lngg"
+        id="recap"
+        data-composition-id="recap"
+        data-composition-src="compositions/recap.html"
+        data-start="91.06"
+        data-duration="13.01"
+        data-track-index="1"
+        data-track-kind="graphics"
+        data-width="1080"
+        data-height="1080"
+        style="z-index: 7"
+      ></div>
+      <div data-hf-id="hf-cj7k"
+        id="outro"
+        data-composition-id="outro"
+        data-composition-src="compositions/outro.html"
+        data-start="104.07"
+        data-duration="10.74"
+        data-track-index="1"
+        data-track-kind="graphics"
+        data-width="1080"
+        data-height="1080"
+        style="z-index: 8"
+      ></div>
+      <div data-hf-id="hf-1xcg"
+        id="captions"
+        data-composition-id="captions"
+        data-composition-src="compositions/captions.html"
+        data-start="0"
+        data-duration="114.81"
+        data-track-index="2"
+        data-track-kind="captions"
+        data-width="1080"
+        data-height="1080"
+        style="z-index: 20"
+      ></div>
+    </div>
+    <script>
+      window.__timelines["main"] = gsap.timeline({ paused: true });
+    </script>
+  </body>
+</html>

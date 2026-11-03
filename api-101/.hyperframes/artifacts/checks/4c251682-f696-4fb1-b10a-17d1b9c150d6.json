@@ -1,0 +1,815 @@
+{
+  "ok": false,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "timeline_track_too_dense",
+        "severity": "warning",
+        "message": "Track 0 has 28 timed elements in this HTML file. Smaller sub-compositions keep timelines easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/Users/sjangle/PersonalProjects/test-hyperframe/api-101/compositions/captions.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move coherent scene groups into smaller .html files and mount them from the parent with data-composition-src so the timeline stays easier to inspect, revise, and validate."
+      }
+    ],
+    "filesScanned": 10
+  },
+  "runtime": {
+    "ok": false,
+    "errorCount": 2,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "console_error",
+        "severity": "error",
+        "message": "[HyperFrames] composition script error: timeouts TypeError: Cannot read properties of null (reading '__ch')",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "114.81",
+          "data-width": "1080",
+          "data-height": "1080"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1080
+        },
+        "time": 0,
+        "url": "",
+        "line": 1384
+      },
+      {
+        "code": "console_error",
+        "severity": "error",
+        "message": "[HyperFrames] composition script error: idem TypeError: Cannot read properties of null (reading '__ch')",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "114.81",
+          "data-width": "1080",
+          "data-height": "1080"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1080
+        },
+        "time": 0,
+        "url": "",
+        "line": 4229
+      }
+    ]
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 6,
+    "findings": [
+      {
+        "code": "text_occluded",
+        "severity": "info",
+        "time": 6.378,
+        "selector": "div.hk-route",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 324,
+          "top": 359,
+          "right": 799.3,
+          "bottom": 417,
+          "width": 475.3,
+          "height": 58
+        },
+        "containerSelector": "#hook-note",
+        "text": "CENTRAL → HARBOUR",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 0.44,
+        "dataAttributes": {},
+        "sourceFile": "compositions/hook.html",
+        "bbox": {
+          "x": 324,
+          "y": 359,
+          "width": 475.3,
+          "height": 58
+        },
+        "firstSeen": 6.378,
+        "lastSeen": 6.378,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          6.378
+        ]
+      },
+      {
+        "code": "text_box_overflow",
+        "severity": "info",
+        "time": 31.892,
+        "selector": "#rt-c-a",
+        "message": "Text extends outside its nearest visual/container box.",
+        "rect": {
+          "left": 190,
+          "top": 385,
+          "right": 425.2,
+          "bottom": 459,
+          "width": 235.2,
+          "height": 74
+        },
+        "containerSelector": "#rt-client",
+        "text": "ticket?",
+        "fixHint": "Text is 235px x 74px inside 260px x 200px and overflows by up to 3px; widen the container to at least ~263px, or allow wrapping with max-width/fitTextFontSize.",
+        "containerRect": {
+          "left": 162,
+          "top": 300,
+          "right": 422,
+          "bottom": 500,
+          "width": 260,
+          "height": 200
+        },
+        "overflow": {
+          "right": 3.2
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/retry.html",
+        "bbox": {
+          "x": 190,
+          "y": 385,
+          "width": 235.2,
+          "height": 74
+        },
+        "firstSeen": 31.892,
+        "lastSeen": 31.892,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          31.892
+        ]
+      },
+      {
+        "code": "text_occluded",
+        "severity": "info",
+        "time": 31.892,
+        "selector": "#rt-lab-req",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 464.36,
+          "top": 318,
+          "right": 615.63,
+          "bottom": 355,
+          "width": 151.27,
+          "height": 37
+        },
+        "containerSelector": "#rt-note",
+        "text": "request →",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 0.63,
+        "dataAttributes": {},
+        "sourceFile": "compositions/retry.html",
+        "bbox": {
+          "x": 464.36,
+          "y": 318,
+          "width": 151.27,
+          "height": 37
+        },
+        "firstSeen": 31.892,
+        "lastSeen": 31.892,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          31.892
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 31.892,
+        "selector": "#rt-c-a",
+        "message": "Nowrap text is wider than its container.",
+        "rect": {
+          "left": 190,
+          "top": 388,
+          "right": 425.2,
+          "bottom": 456,
+          "width": 235.2,
+          "height": 68
+        },
+        "containerSelector": "#rt-client > div:nth-of-type(2)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 190,
+          "top": 388,
+          "right": 394,
+          "bottom": 456,
+          "width": 204,
+          "height": 68
+        },
+        "overflow": {
+          "right": 31.2
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/retry.html",
+        "bbox": {
+          "x": 190,
+          "y": 388,
+          "width": 235.2,
+          "height": 68
+        },
+        "firstSeen": 31.892,
+        "lastSeen": 31.892,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          31.892
+        ]
+      },
+      {
+        "code": "text_box_overflow",
+        "severity": "info",
+        "time": 44.648,
+        "selector": "#bo-count",
+        "message": "Text extends outside its nearest visual/container box.",
+        "rect": {
+          "left": 190,
+          "top": 673,
+          "right": 322,
+          "bottom": 731,
+          "width": 132,
+          "height": 58
+        },
+        "containerSelector": "#bo-crowd",
+        "text": "7,971",
+        "fixHint": "Text is 132px x 58px inside 400px x 440px and overflows by up to 21px; increase the container height to at least ~461px, or allow wrapping with max-width/fitTextFontSize.",
+        "containerRect": {
+          "left": 162,
+          "top": 270,
+          "right": 562,
+          "bottom": 710,
+          "width": 400,
+          "height": 440
+        },
+        "overflow": {
+          "bottom": 21
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/backoff.html",
+        "bbox": {
+          "x": 190,
+          "y": 673,
+          "width": 132,
+          "height": 58
+        },
+        "firstSeen": 44.648,
+        "lastSeen": 44.648,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          44.648
+        ]
+      },
+      {
+        "code": "text_box_overflow",
+        "severity": "info",
+        "time": 44.648,
+        "selector": "#bo-st-a",
+        "message": "Text extends outside its nearest visual/container box.",
+        "rect": {
+          "left": 666,
+          "top": 601,
+          "right": 834,
+          "bottom": 638,
+          "width": 168,
+          "height": 37
+        },
+        "containerSelector": "#bo-server",
+        "text": "status: ok",
+        "fixHint": "Text is 168px x 37px inside 280px x 260px and overflows by up to 18px; increase the container height to at least ~278px, or allow wrapping with max-width/fitTextFontSize.",
+        "containerRect": {
+          "left": 638,
+          "top": 360,
+          "right": 918,
+          "bottom": 620,
+          "width": 280,
+          "height": 260
+        },
+        "overflow": {
+          "bottom": 18
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/backoff.html",
+        "bbox": {
+          "x": 666,
+          "y": 601,
+          "width": 168,
+          "height": 37
+        },
+        "firstSeen": 44.648,
+        "lastSeen": 44.648,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          44.648
+        ]
+      }
+    ],
+    "duration": 114.81,
+    "samples": [
+      6.378,
+      19.135,
+      31.892,
+      44.648,
+      57.405,
+      70.162,
+      82.918,
+      95.675,
+      108.432
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 6,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      6.378,
+      31.892,
+      57.405,
+      82.918,
+      108.432
+    ],
+    "checked": 175,
+    "passed": 175
+  },
+  "craft": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 11,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and 3 text elements stay under it for 0.5 s or more, the smallest \"rail.app/book\" at 23 px: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "rail.app/book",
+        "selector": "div.hk-url",
+        "dataAttributes": {},
+        "sourceFile": "compositions/hook.html",
+        "bbox": {
+          "x": 308.76,
+          "y": 301.24,
+          "width": 175.97,
+          "height": 29.14
+        },
+        "time": 0,
+        "times": [
+          0,
+          2.683,
+          2.683
+        ],
+        "fontPx": 22.56,
+        "floorPx": 28,
+        "seconds": 8.242,
+        "elements": [
+          {
+            "selector": "div.hk-url",
+            "text": "rail.app/book",
+            "fontPx": 22.56,
+            "time": 0,
+            "seconds": 8.242
+          },
+          {
+            "selector": "#hook-term > div:nth-of-type(1)",
+            "text": "client",
+            "fontPx": 26,
+            "time": 2.683,
+            "seconds": 5.559
+          },
+          {
+            "selector": "#hook-wait",
+            "text": "waiting 00s",
+            "fontPx": 26,
+            "time": 2.683,
+            "seconds": 5.559
+          }
+        ]
+      },
+      {
+        "code": "film_silent",
+        "severity": "warning",
+        "message": "This 115 s film has no sound source (no <audio>, no <video> with sound): add a music bed and sounds on the visible actions unless the person asked for silence; see references/sound.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0
+      },
+      {
+        "code": "dead_stretch",
+        "severity": "warning",
+        "message": "Nothing on screen changes for 4.02 s (17.63–21.66 s): start the next move within 3 s, or put data-hold on the element whose stillness is deliberate; see references/motion.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 17.634,
+        "seconds": 4.025,
+        "floorSeconds": 3,
+        "until": 21.659
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and 3 text elements stay under it for 0.5 s or more, the smallest \"client\" at 26 px: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "client",
+        "selector": "#rt-client > div:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/retry.html",
+        "bbox": {
+          "x": 219.27,
+          "y": 327.22,
+          "width": 101.2,
+          "height": 34.4
+        },
+        "time": 23.575,
+        "times": [
+          23.575,
+          23.767,
+          26.642
+        ],
+        "fontPx": 25.55,
+        "floorPx": 28,
+        "seconds": 15.718,
+        "elements": [
+          {
+            "selector": "#rt-client > div:nth-of-type(1)",
+            "text": "client",
+            "fontPx": 25.55,
+            "time": 23.575,
+            "seconds": 15.718
+          },
+          {
+            "selector": "#rt-server > div:nth-of-type(1)",
+            "text": "server",
+            "fontPx": 25.55,
+            "time": 23.767,
+            "seconds": 15.526
+          },
+          {
+            "selector": "#rt-term > div:nth-of-type(1)",
+            "text": "client.log",
+            "fontPx": 26,
+            "time": 26.642,
+            "seconds": 12.651
+          }
+        ]
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and 4 text elements stay under it for 0.5 s or more, the smallest \"users\" at 25 px: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "users",
+        "selector": "#bo-crowd > div:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/backoff.html",
+        "bbox": {
+          "x": 221.78,
+          "y": 302.43,
+          "width": 83.54,
+          "height": 34.07
+        },
+        "time": 40.059,
+        "times": [
+          40.059,
+          40.634,
+          51.176,
+          53.092
+        ],
+        "fontPx": 25.31,
+        "floorPx": 28,
+        "seconds": 10.925,
+        "elements": [
+          {
+            "selector": "#bo-crowd > div:nth-of-type(1)",
+            "text": "users",
+            "fontPx": 25.31,
+            "time": 40.059,
+            "seconds": 10.925
+          },
+          {
+            "selector": "#bo-server > div:nth-of-type(1)",
+            "text": "server",
+            "fontPx": 25.31,
+            "time": 40.634,
+            "seconds": 10.35
+          },
+          {
+            "selector": "#bo-axis > div:nth-of-type(1)",
+            "text": "attempts over time",
+            "fontPx": 25.65,
+            "time": 53.092,
+            "seconds": 12.459
+          },
+          {
+            "selector": "#bo-formula > div:nth-of-type(1)",
+            "text": "backoff.js",
+            "fontPx": 26,
+            "time": 51.176,
+            "seconds": 14.375
+          }
+        ]
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and \"bank · a/c ••4821\" renders at 25 px for 7.47 s: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "bank · a/c ••4821",
+        "selector": "#db-bank > div:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/debit.html",
+        "bbox": {
+          "x": 322.81,
+          "y": 303.79,
+          "width": 282.87,
+          "height": 33.94
+        },
+        "time": 66.126,
+        "times": [
+          66.126
+        ],
+        "fontPx": 25.21,
+        "floorPx": 28,
+        "seconds": 7.475,
+        "elements": [
+          {
+            "selector": "#db-bank > div:nth-of-type(1)",
+            "text": "bank · a/c ••4821",
+            "fontPx": 25.21,
+            "time": 66.126,
+            "seconds": 7.475
+          }
+        ]
+      },
+      {
+        "code": "dead_stretch",
+        "severity": "warning",
+        "message": "Nothing on screen changes for 6.33 s (77.05–83.38 s): start the next move within 3 s, or put data-hold on the element whose stillness is deliberate; see references/motion.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 77.051,
+        "seconds": 6.325,
+        "floorSeconds": 3,
+        "until": 83.376
+      },
+      {
+        "code": "dead_stretch",
+        "severity": "warning",
+        "message": "Nothing on screen changes for 3.07 s (86.83–89.89 s): start the next move within 3 s, or put data-hold on the element whose stillness is deliberate; see references/motion.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 86.826,
+        "seconds": 3.067,
+        "floorSeconds": 3,
+        "until": 89.893
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and 9 text elements stay under it for 0.5 s or more, the smallest \"backoff\" at 25 px: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "backoff",
+        "selector": "#rc-s2 > div:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/recap.html",
+        "bbox": {
+          "x": 221.46,
+          "y": 524.96,
+          "width": 114.47,
+          "height": 33.35
+        },
+        "time": 93.535,
+        "times": [
+          91.81,
+          91.81,
+          92.768,
+          92.768,
+          93.535,
+          93.535,
+          94.493,
+          94.493,
+          96.218
+        ],
+        "fontPx": 24.78,
+        "floorPx": 28,
+        "seconds": 10.542,
+        "elements": [
+          {
+            "selector": "#rc-s2 > div:nth-of-type(1)",
+            "text": "backoff",
+            "fontPx": 24.78,
+            "time": 93.535,
+            "seconds": 10.542
+          },
+          {
+            "selector": "#rc-s2 > div:nth-of-type(1) > span:nth-of-type(2)",
+            "text": "1·2·4s",
+            "fontPx": 24.78,
+            "time": 93.535,
+            "seconds": 10.542
+          },
+          {
+            "selector": "#rc-s3 > div:nth-of-type(1)",
+            "text": "idem. key",
+            "fontPx": 25.23,
+            "time": 94.493,
+            "seconds": 9.584
+          },
+          {
+            "selector": "#rc-s3 > div:nth-of-type(1) > span:nth-of-type(2)",
+            "text": "reuse",
+            "fontPx": 25.23,
+            "time": 94.493,
+            "seconds": 9.584
+          },
+          {
+            "selector": "#rc-ticket > div:nth-of-type(1)",
+            "text": "ticket #4821",
+            "fontPx": 25.36,
+            "time": 96.218,
+            "seconds": 7.859
+          },
+          {
+            "selector": "#rc-s0 > div:nth-of-type(1)",
+            "text": "timeout",
+            "fontPx": 25.58,
+            "time": 91.81,
+            "seconds": 12.267
+          },
+          {
+            "selector": "#rc-s0 > div:nth-of-type(1) > span:nth-of-type(2)",
+            "text": "10s",
+            "fontPx": 25.58,
+            "time": 91.81,
+            "seconds": 12.267
+          },
+          {
+            "selector": "#rc-s1 > div:nth-of-type(1)",
+            "text": "retry",
+            "fontPx": 26,
+            "time": 92.768,
+            "seconds": 11.309
+          },
+          {
+            "selector": "#rc-s1 > div:nth-of-type(1) > span:nth-of-type(2)",
+            "text": "max 3",
+            "fontPx": 26,
+            "time": 92.768,
+            "seconds": 11.309
+          }
+        ]
+      },
+      {
+        "code": "dead_stretch",
+        "severity": "warning",
+        "message": "Nothing on screen changes for 3.45 s (99.48–102.93 s): start the next move within 3 s, or put data-hold on the element whose stillness is deliberate; see references/motion.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 99.476,
+        "seconds": 3.45,
+        "floorSeconds": 3,
+        "until": 102.926
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and \"~/api-101\" renders at 26 px for 10.16 s: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "~/api-101",
+        "selector": "#ou-term > div:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/outro.html",
+        "bbox": {
+          "x": 275.28,
+          "y": 335,
+          "width": 153.71,
+          "height": 34.83
+        },
+        "time": 104.652,
+        "times": [
+          104.652
+        ],
+        "fontPx": 25.87,
+        "floorPx": 28,
+        "seconds": 10.158,
+        "elements": [
+          {
+            "selector": "#ou-term > div:nth-of-type(1)",
+            "text": "~/api-101",
+            "fontPx": 25.87,
+            "time": 104.652,
+            "seconds": 10.158
+          }
+        ]
+      }
+    ],
+    "enabled": true,
+    "step": 0.19200000000000017,
+    "samples": 599
+  },
+  "audio": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 1,
+    "findings": [
+      {
+        "code": "audio_none",
+        "severity": "info",
+        "message": "The film has no sound: no clip in it plays audio.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0
+      }
+    ]
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}

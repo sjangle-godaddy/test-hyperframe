@@ -1,0 +1,52 @@
+/* Shared look for every scene. Colours live on :root in index.html. */
+.k-safe { position: absolute; left: 162px; top: 162px; width: 756px; height: 756px; }
+.k-title {
+  position: absolute; left: 0; top: 0; width: 756px; height: 80px; margin: 0;
+  font-family: "Permanent Marker", cursive; font-weight: 400; font-size: 58px; line-height: 80px;
+  color: var(--ink); text-align: center; white-space: pre;
+}
+.k-title .k-t { position: absolute; left: 0; top: 0; width: 100%; }
+.k-underline { position: absolute; left: 253px; top: 74px; width: 250px; height: 22px; overflow: visible; }
+.k-underline path { fill: none; stroke: var(--orange); stroke-width: 5; stroke-linecap: round; }
+.k-stage { position: absolute; left: 0; top: 108px; width: 756px; height: 524px; }
+
+.k-card {
+  position: absolute; box-sizing: border-box; padding: 22px 26px;
+  background: var(--card); border: 2px solid var(--line); border-radius: 18px;
+  color: var(--ink); font-family: var(--mono); opacity: 0;
+}
+.k-head {
+  display: flex; align-items: center; gap: 14px; height: 34px;
+  font-family: var(--mono); font-size: 28px; font-weight: 700; letter-spacing: 0.04em;
+  text-transform: uppercase; color: var(--muted);
+}
+.k-head .k-right { margin-left: auto; letter-spacing: 0.02em; }
+.k-dot { flex: none; width: 14px; height: 14px; border-radius: 50%; border: 2.5px solid var(--blue); box-sizing: border-box; }
+.k-dot.o { border-color: var(--orange); }
+.k-dot.g { border-color: var(--green); }
+.k-label { margin-top: 18px; font-size: 28px; color: var(--muted); }
+.k-big { font-size: 56px; font-weight: 700; line-height: 68px; white-space: nowrap; }
+.k-bar { position: relative; height: 14px; margin-top: 14px; border-radius: 7px; border: 2px solid var(--line); overflow: hidden; }
+.k-fill { position: absolute; inset: 0; background: var(--blue); transform-origin: 0 50%; }
+.k-term .k-tline { font-size: 28px; line-height: 46px; white-space: pre; }
+.k-path { position: absolute; overflow: visible; }
+.k-path line, .k-path path { fill: none; stroke: var(--muted); stroke-width: 2.5; stroke-dasharray: 9 9; }
+.k-packet { position: absolute; width: 20px; height: 20px; margin: -10px 0 0 -10px; border-radius: 50%; background: var(--orange); opacity: 0; }
+.k-stamp {
+  position: absolute; padding: 8px 18px; border: 3px solid var(--orange); border-radius: 10px;
+  font-family: var(--mono); font-size: 30px; font-weight: 700; color: var(--orange);
+  background: var(--ground); white-space: nowrap; opacity: 0;
+}
+.k-note {
+  position: absolute; padding: 10px 20px; border: 2.5px solid var(--orange); border-radius: 12px;
+  font-family: "Permanent Marker", cursive; font-size: 30px; color: var(--orange);
+  background: var(--ground); white-space: nowrap; text-align: center; opacity: 0;
+}
+.k-hide { opacity: 0; }
+
+/* Typewriter characters: hidden until typed; the caret rides the last typed one. */
+.k-ch { position: relative; opacity: 0; --cur: 0; }
+.k-ch::after {
+  content: ""; position: absolute; right: -0.09em; top: 14%; height: 72%; width: 0.08em;
+  min-width: 3px; background: var(--caret, var(--orange)); opacity: var(--cur);
+}

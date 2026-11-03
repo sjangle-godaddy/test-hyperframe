@@ -1,0 +1,191 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "timeline_track_too_dense",
+        "severity": "warning",
+        "message": "Track 0 has 28 timed elements in this HTML file. Smaller sub-compositions keep timelines easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/Users/sjangle/PersonalProjects/test-hyperframe/api-101/compositions/captions.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move coherent scene groups into smaller .html files and mount them from the parent with data-composition-src so the timeline stays easier to inspect, revise, and validate."
+      }
+    ],
+    "filesScanned": 10
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 1,
+    "findings": [
+      {
+        "code": "text_box_overflow",
+        "severity": "info",
+        "time": 44.648,
+        "selector": "#bo-st-a",
+        "message": "Text extends outside its nearest visual/container box.",
+        "rect": {
+          "left": 666,
+          "top": 601,
+          "right": 834,
+          "bottom": 638,
+          "width": 168,
+          "height": 37
+        },
+        "containerSelector": "#bo-server",
+        "text": "status: ok",
+        "fixHint": "Text is 168px x 37px inside 280px x 260px and overflows by up to 18px; increase the container height to at least ~278px, or allow wrapping with max-width/fitTextFontSize.",
+        "containerRect": {
+          "left": 638,
+          "top": 360,
+          "right": 918,
+          "bottom": 620,
+          "width": 280,
+          "height": 260
+        },
+        "overflow": {
+          "bottom": 18
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/backoff.html",
+        "bbox": {
+          "x": 666,
+          "y": 601,
+          "width": 168,
+          "height": 37
+        },
+        "firstSeen": 44.648,
+        "lastSeen": 44.648,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          44.648
+        ]
+      }
+    ],
+    "duration": 114.81,
+    "samples": [
+      6.378,
+      19.135,
+      31.892,
+      44.648,
+      57.405,
+      70.162,
+      82.918,
+      95.675,
+      108.432
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 1,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      6.378,
+      31.892,
+      57.405,
+      82.918,
+      108.432
+    ],
+    "checked": 256,
+    "passed": 256
+  },
+  "craft": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "film_silent",
+        "severity": "warning",
+        "message": "This 115 s film has no sound source (no <audio>, no <video> with sound): add a music bed and sounds on the visible actions unless the person asked for silence; see references/sound.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0
+      }
+    ],
+    "enabled": true,
+    "step": 0.19200000000000017,
+    "samples": 599
+  },
+  "audio": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 1,
+    "findings": [
+      {
+        "code": "audio_none",
+        "severity": "info",
+        "message": "The film has no sound: no clip in it plays audio.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0
+      }
+    ]
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}
